@@ -40,6 +40,7 @@ footer {
 footer>a,
 footer>a>img {
     height: 4em;
+    cursor: pointer;
 }
 
 header {
@@ -313,7 +314,7 @@ header {
     align-items: center;
 }
 
-#main__slide>div>span {
+#main__slide>div>p {
     color: white;
     font-size: 2em;
     font-weight: bold;
@@ -332,80 +333,119 @@ header {
 }
 
 #main__slide__second {
-    background-image: url("../img/diapo2/img2.jpg");
+    background-image: linear-gradient(90deg, #52854C 0%, #00000000 50%), url("../img/diapo2/img2.jpg");
 }
 
 #main__slide__third {
-    background-image: url("../img/diapo3/img3.jpg");
+    background-image: linear-gradient(90deg, #293452 0%, #00000000 50%), url("../img/diapo3/img3.jpg");
 }
 
 #main__slide__fourth {
-    background-image: url("../img/diapo4/img4.jpg");
+    background-image: linear-gradient(90deg, #293452 0%, #00000000 50%), url("../img/diapo4/img4.jpg");
 }
 
 #main__slide__fifth {
-    background-image: url("../img/diapo5/img6.jpg");
+    background-image: linear-gradient(90deg, #A51C30 0%, #00000000 50%), url("../img/diapo5/img5.jpg");
 }
 
 #main__slide__sixth {
-    background-image: url("../img/diapo6/img6.jpg");
+    background-image: linear-gradient(90deg, #8B8178 0%, #00000000 50%), url("../img/diapo6/img6.jpg");
 }
 
 #main__slide__seventh {
-    background-image: url("../img/diapo7/img7.jpg");
+    background-image: linear-gradient(90deg, #293452 0%, #00000000 50%), url("../img/diapo7/img7.jpg");
 }
 
 #main__slide__eighth {
-    background-image: url("../img/diapo8/img8.jpg");
+    background-image: linear-gradient(90deg, #52854C 0%, #00000000 50%), url("../img/diapo8/img8.jpg");
 }
 
 #main__slide__ninth {
-    background-image: url("../img/diapo9/img9.jpg");
+    background-image: linear-gradient(90deg, #A51C30 0%, #00000000 50%), url("../img/diapo9/img9.jpg");
 }
 
 #main__news {
     margin: 0 auto;
     width: 80%;
     padding: 2em;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 2fr);
-    /* grid-auto-rows: minmax(1fr, auto); */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
     grid-column-gap: 2em;
     grid-row-gap: 2em;
     background-color: white;
 }
 
-#main__news__first__title {
-    background-image: url("../img/Actus/1/Affiche_ahouai_2022_1-418x550.png");
+#main__news__first,
+#main__news__second,
+#main__news__third,
+#main__news__fourth,
+#main__news__fifth,
+#main__news__sixth {
+    width: 18em;
+    min-height: 20em;
+    max-height: 22em;
+    overflow: hidden;
+    position: relative;
+    border-radius: 0.3em;
+    filter: drop-shadow(0 0 0.5em #00000050);
 }
 
-#main__news__second__title {
-    background-image: url("../img/Actus/2/EOES_2022_3-1-418x557.jpg");
+#main__news__description {
+    padding: 0.3em;
+    text-align: justify;
+    width: 100%;
+    background: white;
+    cursor: pointer;
 }
 
-#main__news__third__title {
-    background-image: url("../img/Actus/3/OIC_final_2022_2-418x324.png");
+#main__news__description:hover {
+    text-decoration: underline;
 }
 
-#main__news__fourth__title {
-    background-image: url("../img/Actus/4/Giec_2022_1-418x300.png");
-}
-
-#main__news__fifth__title {
-    background-image: url("../img/Actus/5/ICHO_2022_1-418x434.jpg");
-}
-
+#main__news__first__title,
+#main__news__second__title,
+#main__news__third__title,
+#main__news__fourth__title,
+#main__news__fifth__title,
 #main__news__sixth__title {
-    background-image: url("../img/Actus/6/TABOR_2022_1-418x557.jpeg");
-}
-
-#main__news>a>div {
+    height: 12em;
+    width: 100%;
     background-repeat: no-repeat;
     background-position: top;
     background-size: 100%;
-    
-    height: 50%;
+    display: flex;
+    justify-content: start;
+    align-items: end;
+    padding: 0 0.3em;
+    font-weight: bold;
+    text-align: justify;
+}
+
+#main__news__first__title {
+    background-image: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 40%), url("../img/Actus/1/Affiche_ahouai_2022_1-418x550.png");
+}
+
+#main__news__second__title {
+    background-image: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 40%), url("../img/Actus/2/EOES_2022_3-1-418x557.jpg");
+}
+
+#main__news__third__title {
+    background-image: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 40%), url("../img/Actus/3/OIC_final_2022_2-418x324.png");
+}
+
+#main__news__fourth__title {
+    background-image: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 40%), url("../img/Actus/4/Giec_2022_1-418x300.png");
+}
+
+#main__news__fifth__title {
+    background-image: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 40%), url("../img/Actus/5/ICHO_2022_1-418x434.jpg");
+}
+
+#main__news__sixth__title {
+    background-image: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 40%), url("../img/Actus/6/TABOR_2022_1-418x557.jpeg");
 }
 
 /* #main__news__seventh__title {
@@ -415,3 +455,13 @@ header {
 #main__news__eighth__title {
     background-image: url("../img/Actus/8/Circuit_2022_1-418x290.jpg");
 } */
+
+#date {
+    position: absolute;
+    bottom: 0;
+    left: 0.55em;
+    width: 100%;
+    font-size: 0.6em;
+    color: gray;
+    background: linear-gradient(0deg, rgba(255,255,255,1) 40%, rgba(255,255,255,0) 100%);
+}

@@ -39,7 +39,7 @@
         width: max-content;
         height: max-content;
         border-radius: 0 0 0.2em 0.2em;
-        /* padding-bottom: 2em; */
+        padding: 0 2em;
     }
 
     #header__menu__first-package,
@@ -112,7 +112,7 @@
     }
 
     #header__menu-button {
-        font-size: em;
+        font-size: 0.8em;
         margin: 0 0.5em;
         cursor: pointer;
     }
