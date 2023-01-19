@@ -1,0 +1,417 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    transition: 0.1s;
+    color: black;
+    z-index: 10;
+    cursor: default;
+    text-decoration: none;
+}
+
+*::selection {
+    background: transparent;
+}
+
+body {
+    margin: 0 auto;
+    min-height: 100vh;
+}
+
+main {
+    max-width: 1366px;
+    margin: 0 auto;
+    background-color: transparent;
+}
+
+footer {
+    background-color: #F8F8F8;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 1em;
+    padding: 1em 0;
+}
+
+footer>a,
+footer>a>img {
+    height: 4em;
+}
+
+header {
+    height: 16em;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+#header__buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 4em;
+    background-color: #F8F8F8;
+    padding: 0 0 0 4em;
+    overflow: hidden;
+}
+
+#header__image {
+    height: 100%;
+    width: 100%;
+    background-image: url(../img/LyceeHenriPoincare.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+
+    position: absolute;
+    top: 0;
+    z-index: -100;
+}
+
+#header__buttons__title {
+    font-weight: bold;
+    color: #5f5f5f;
+}
+
+#header__buttons__contact {
+    background-color: #3d7e40;
+    padding: 0.3em 0.5em;
+    border-radius: 0.2em;
+    color: white;
+    cursor: pointer;
+
+}
+
+#header__buttons__contact:hover {
+    background-color: #60AD5E;
+}
+
+#header__buttons__contact:active {
+    background-color: #005005;
+}
+
+#header__buttons__buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#header__menu-button {
+    font-size: 2em;
+    margin: 0 1em;
+    cursor: pointer;
+}
+
+.MenuHidden {
+    display: none;
+}
+
+.MenuShow {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+    position: absolute;
+    top: calc(16em*0.2);
+    width: 100%;
+    height: calc(16em*0.2);
+    background-color: white;
+}
+
+#header__menu>div>div>a {
+
+    cursor: pointer;
+}
+
+#header__menu>div>div>a:hover {
+    text-decoration: underline;
+}
+
+#header__menu__first-package,
+#header__menu__second-package,
+#header__menu__third-package,
+#header__menu__fourth-package,
+#header__menu__fifth-package,
+#header__menu__sixth-package,
+#header__menu__seventh-package,
+#header__menu__eighth-package {
+    cursor: pointer;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+}
+
+#header__menu__first-child {
+
+    background-color: #3d7e40;
+    color: white;
+    padding: 0.3em 0.5em;
+    border-radius: 0.2em;
+}
+
+#header__menu__first-child:hover {
+    background-color: #60AD5E;
+}
+
+#header__menu__first-child:active {
+    background-color: #005005;
+}
+
+#header__menu__second-child,
+#header__menu__third-child,
+#header__menu__fourth-child,
+#header__menu__fifth-child,
+#header__menu__sixth-child,
+#header__menu__seventh-child,
+#header__menu__eighth-child {
+
+    color: #3d7e40;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    height: 100%;
+    cursor: pointer;
+    width: 100%;
+}
+
+#header__menu__second-child:hover,
+#header__menu__third-child:hover,
+#header__menu__fourth-child:hover,
+#header__menu__fifth-child:hover,
+#header__menu__sixth-child:hover,
+#header__menu__seventh-child:hover,
+#header__menu__eighth-child:hover {
+    color: #60AD5E;
+}
+
+#header__menu__second-child:active,
+#header__menu__third-child:active,
+#header__menu__fourth-child:active,
+#header__menu__fifth-child:active,
+#header__menu__sixth-child:active,
+#header__menu__seventh-child:active,
+#header__menu__eighth-child:active {
+    color: #005005;
+}
+
+#header__menu__second-child__list,
+#header__menu__third-child__list,
+#header__menu__fourth-child__list,
+#header__menu__fifth-child__list,
+#header__menu__sixth-child__list,
+#header__menu__seventh-child__list,
+#header__menu__eighth-child__list {
+    display: none;
+    overflow: hidden;
+    top: 2.5em;
+    background-color: white;
+    padding: 1em;
+    border-radius: 0 0 0.2em 0.2em;
+    position: absolute;
+    list-style: none;
+    flex-direction: column;
+    transform: translateX(-1em);
+}
+
+#header__menu__second-package *:hover+#header__menu__second-child__list,
+#header__menu__second-child__list:hover {
+    display: flex;
+}
+
+#header__menu__third-package *:hover+#header__menu__third-child__list,
+#header__menu__third-child__list:hover {
+    display: flex;
+}
+
+#header__menu__fourth-package *:hover+#header__menu__fourth-child__list,
+#header__menu__fourth-child__list:hover {
+    display: flex;
+}
+
+#header__menu__fifth-package *:hover+#header__menu__fifth-child__list,
+#header__menu__fifth-child__list:hover {
+    display: flex;
+}
+
+#header__menu__sixth-package *:hover+#header__menu__sixth-child__list,
+#header__menu__sixth-child__list:hover {
+    display: flex;
+}
+
+#header__menu__seventh-package *:hover+#header__menu__seventh-child__list,
+#header__menu__seventh-child__list:hover {
+    display: flex;
+}
+
+#header__menu__eighth-package *:hover+#header__menu__eighth-child__list,
+#header__menu__eighth-child__list:hover {
+    display: flex;
+}
+
+#main__easy-access {
+    width: 100%;
+    margin: 0 auto;
+    padding: 2em 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 9;
+}
+
+#main__easy-access>* {
+    z-index: 9;
+}
+
+#main__easy-access>a>img {
+    max-height: 3em;
+    max-width: 3em;
+    filter: drop-shadow(0 0 0.15em rgb(124, 124, 124));
+    cursor: pointer;
+
+}
+
+#main__easy-access>a>img:hover {
+    transform: scale(1.1);
+}
+
+#main__easy-access>a>img:active {
+    transform: scale(0.9);
+}
+
+
+
+
+.HiddenSlide {
+    display: none;
+}
+
+#main__slide {
+    display: flex;
+    justify-content: center;
+}
+
+#main__slide>* {
+    z-index: 9;
+}
+
+.ActiveSlide {
+    height: 18em;
+    width: 60%;
+    margin: 0 auto;
+    border-radius: 1em;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+#main__slide>div>span {
+    color: white;
+    font-size: 2em;
+    font-weight: bold;
+    margin: 1em;
+    width: 50%;
+}
+
+#main__slide>div {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+}
+
+#main__slide__first {
+    background-image: linear-gradient(90deg, #A51C30 0%, #00000000 50%), url("../img/diapo1/img1.jpg");
+}
+
+#main__slide__second {
+    background-image: url("../img/diapo2/img2.jpg");
+}
+
+#main__slide__third {
+    background-image: url("../img/diapo3/img3.jpg");
+}
+
+#main__slide__fourth {
+    background-image: url("../img/diapo4/img4.jpg");
+}
+
+#main__slide__fifth {
+    background-image: url("../img/diapo5/img6.jpg");
+}
+
+#main__slide__sixth {
+    background-image: url("../img/diapo6/img6.jpg");
+}
+
+#main__slide__seventh {
+    background-image: url("../img/diapo7/img7.jpg");
+}
+
+#main__slide__eighth {
+    background-image: url("../img/diapo8/img8.jpg");
+}
+
+#main__slide__ninth {
+    background-image: url("../img/diapo9/img9.jpg");
+}
+
+#main__news {
+    margin: 0 auto;
+    width: 80%;
+    padding: 2em;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 2fr);
+    /* grid-auto-rows: minmax(1fr, auto); */
+    grid-column-gap: 2em;
+    grid-row-gap: 2em;
+    background-color: white;
+}
+
+#main__news__first__title {
+    background-image: url("../img/Actus/1/Affiche_ahouai_2022_1-418x550.png");
+}
+
+#main__news__second__title {
+    background-image: url("../img/Actus/2/EOES_2022_3-1-418x557.jpg");
+}
+
+#main__news__third__title {
+    background-image: url("../img/Actus/3/OIC_final_2022_2-418x324.png");
+}
+
+#main__news__fourth__title {
+    background-image: url("../img/Actus/4/Giec_2022_1-418x300.png");
+}
+
+#main__news__fifth__title {
+    background-image: url("../img/Actus/5/ICHO_2022_1-418x434.jpg");
+}
+
+#main__news__sixth__title {
+    background-image: url("../img/Actus/6/TABOR_2022_1-418x557.jpeg");
+}
+
+#main__news>a>div {
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: 100%;
+    
+    height: 50%;
+}
+
+/* #main__news__seventh__title {
+    background-image: url("../img/Actus/7/La-Regle-du-jeu_2022_1-418x557.jpg");
+}
+
+#main__news__eighth__title {
+    background-image: url("../img/Actus/8/Circuit_2022_1-418x290.jpg");
+} */

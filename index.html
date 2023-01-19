@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test design Lycée henri poincaré</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animation.css">
+    <script src="js/script.js"></script>
+</head>
+
+<body>
+    <header>
+        <section id="header__buttons">
+            <div id="header__buttons__title">Lycée Henri Poincaré - Nancy</div>
+            <div id="header__buttons__buttons">
+                <a href="http://www.h-poincare.fr/le-lycee/contact/" id="header__buttons__contact">
+                    Nous contacter
+                </a>
+                <div id="header__menu-button" onclick="toggleMenu();">
+                    ☰
+                </div>
+            </div>
+        </section>
+        <section id="header__menu" class="MenuHidden">
+            <!-- <section id="header__menu" class="MenuShow"> -->
+            <div id="header__menu__first-package" onclick="toggleList(this.children[1]);">
+                <a id="header__menu__first-child" href="#">Accueil</a>
+            </div>
+            <div id="header__menu__second-package" onclick="toggleList(this.children[1]);">
+                <span id="header__menu__second-child" href="#">Le Lycée</span>
+                <div id="header__menu__second-child__list" class="MobileHidden">
+                    <a href="http://www.h-poincare.fr/le-lycee/le-mot-du-proviseur/">Le mot du proviseur</a>
+                    <a href="http://www.h-poincare.fr/wp-content/uploads/Agenda32_2021_2022.pdf">Agenda de la
+                        semaine</a>
+                    <a href="http://www.h-poincare.fr/wp-content/uploads/Organigramme_2021-2022.jpg">Organigramme du
+                        lycée</a>
+                    <a href="http://www.h-poincare.fr/le-lycee/organigramme-du-personnel/">Structure pédagogique</a>
+                    <a href="http://www.h-poincare.fr/le-lycee/reglement-interieur/">règlements intérieurs</a>
+                    <a href="http://www.h-poincare.fr/le-lycee/visite-en-image/">Visite en images</a>
+                    <a href="http://www.h-poincare.fr/le-lycee/histoire-du-lycee/">Histoire du lycée</a>
+                </div>
+            </div>
+            <div id="header__menu__third-package" onclick="toggleList(this.children[1]);">
+                <span id="header__menu__third-child" href="#">Second Cycle</span>
+                <div id="header__menu__third-child__list" class="MobileHidden">
+                    <a href="http://www.h-poincare.fr/wp-content/uploads/offre_sp%C3%A9cialit%C3%A9s_permanent_2.jpeg">Offre
+                        d'enseignement de spécialité du lycée</a>
+                    <a href="http://www.h-poincare.fr/second-cycle/la-nouvelle-classe-de-seconde/">La nouvelle classe de
+                        seconde</a>
+                    <a href="http://www.h-poincare.fr/second-cycle/la-nouvelle-classe-de-premiere/">La nouvelle classe
+                        de première</a>
+                    <a href="http://www.h-poincare.fr/second-cycle/la-nouvelle-classe-de-terminale-rentree-2020/">La
+                        nouvelle classe de terminale rentrée 2020</a>
+                    <a href="http://www.h-poincare.fr/second-cycle/voie-technologique-musique-et-danse/">Voie
+                        technologique musique et danse TMD</a>
+                </div>
+            </div>
+            <div id="header__menu__fourth-package" onclick="toggleList(this.children[1]);">
+                <span id="header__menu__fourth-child" href="#">CPGE</span>
+                <div id="header__menu__fourth-child__list" class="MobileHidden">
+                    <a href="http://www.h-poincare.fr/c-p-g-e/pourquoi-une-c-p-g-e/">Pourquoi une C.P.G.E ?</a>
+                    <a href="http://www.h-poincare.fr/c-p-g-e/filieres-scientifiques/">Les classes préparatoires
+                        scientifiques</a>
+                    <a href="http://www.h-poincare.fr/c-p-g-e/filiere-lettres/">Les classes préparatoire littéraires</a>
+                    <a
+                        href="http://www.h-poincare.fr/c-p-g-e/classes-preparatoires-commerciales-scientifiques-et-economiques/">Classes
+                        préparatoires commerciales</a>
+                    <a href="http://www.h-poincare.fr/c-p-g-e/m-a-n-c-a-v/">M.A.N C.A.V</a>
+                    <a href="http://www.h-poincare.fr/c-p-g-e/manuels-scolaires-cpge/">Manuels scolaires CPGE</a>
+                    <a href="http://www.h-poincare.fr/c-p-g-e/hebergement/">hébergement</a>
+                    <a href="http://www.h-poincare.fr/c-p-g-e/resultats-aux-concours/">Résultats aux concours 2022</a>
+                    <a href="http://www.h-poincare.fr/c-p-g-e/formulaires-et-modalites-dinscription-en-premiere-annee/">Modalités
+                        d'inscription en première année</a>
+                    <a
+                        href="http://www.h-poincare.fr/wp-content/uploads/00-Demande-dinscription-2eme-annee-exterieure-2022-2023-bis.pdf">Formulaire
+                        et modalités d'inscription en deuxième année de CPGE</a>
+                    <a href="http://www.h-poincare.fr/c-p-g-e/se-loger-a-lexterieur/">Se loger à l'exterieur du
+                        lycée</a>
+                </div>
+            </div>
+            <div id="header__menu__fifth-package" onclick="toggleList(this.children[1]);">
+                <span id="header__menu__fifth-child" href="#">Resources</span>
+                <div id="header__menu__fifth-child__list" class="MobileHidden">
+                    <a href="http://www.h-poincare.fr/ressources/vie-scolaire/">Vie scolaire</a>
+                    <!-- <a href="https://lyc-poincare-nancy.monbureaunumerique.fr/">L'E.N.T "monbureaunumérique" du lycée</a> -->
+                    <a href="http://www.h-poincare.fr/ressources/cdi/">CDI</a>
+                    <a href="http://www.h-poincare.fr/ressources/documentation/">Documents</a>
+                    <a href="http://www.h-poincare.fr/ressources/pages-personnelles-des-enseignants/">Pages personnelles
+                        des enseignants</a>
+                    <a href="http://www.h-poincare.fr/ressources/cahier-de-vacances-pcsi-mathematiques/">Cahier de
+                        vacances PCSI-Mathématiques</a>
+                    <a href="http://www.h-poincare.fr/c-p-g-e/cahier-de-vacances-ecs1-mathematiques/">Cahier de vacances
+                        ECS1-Mathématiques</a>
+                    <a href="http://www.h-poincare.fr/ressources/cahier-de-vacances-pcsi-chimie/">Cahier de vacances
+                        PCSI-Chimie</a>
+                    <a href="http://www.h-poincare.fr/c-p-g-e/cahier-de-vacances-bcpst_svt-maths-pc/">Cahier de vacances
+                        BCPST_SVT-Maths-PC</a>
+                    <a href="http://www.h-poincare.fr/ressources/sante/">Infirmerie</a>
+                    <a
+                        href="http://www.h-poincare.fr/ressources/conseilleres-dorientation-psychologues/">Orientation</a>
+                </div>
+            </div>
+            <div id="header__menu__sixth-package" onclick="toggleList(this.children[1]);">
+                <span id="header__menu__sixth-child" href="#">Associations</span>
+                <div id="header__menu__sixth-child__list" class="MobileHidden">
+                    <a href="http://www.h-poincare.fr/associations/u-n-s-s/">Association sportive</a>
+                    <a href="http://www.h-poincare.fr/associations/u-n-s-s/">Calligrammes</a>
+                    <a href="http://peep.asso.fr/">La PEEP</a>
+                    <a href="http://www.fcpe.asso.fr/">La FCPE</a>
+                    <a href="http://www.h-poincare.fr/associations/hec-initiative/">HEC initiative</a>
+                    <a href="https://www.facebook.com/La-petite-graine-630482827154288/">La petite graine</a>
+                    <a href="http://www.h-poincare.fr/associations/aiscobam/">Aiscobam</a>
+                    <a href="http://www.h-poincare.fr/associations/foyer-socio-educatif/">Foyer socio éducatif</a>
+                    <a href="http://www.h-poincare.fr/associations/amicale-du-personnel/">Amicale du personnel</a>
+                    <a href="http://www.h-poincare.fr/associations/amicale-des-anciens-eleves/">Amicale des anciens
+                        élèves</a>
+                    <a href="http://www.h-poincare.fr/associations/vie-lyceenne/">Vie lycéenne</a>
+                </div>
+            </div>
+            <div id="header__menu__seventh-package" onclick="toggleList(this.children[1]);">
+                <span id="header__menu__seventh-child" href="#">Intendance</span>
+                <div id="header__menu__seventh-child__list" class="MobileHidden">
+                    <a href="http://www.h-poincare.fr/intendance/restauration/">Restauration</a>
+                    <a href="http://www.h-poincare.fr/wp-content/uploads/menu22_2021_2022.pdf">Menu de la semaine</a>
+                    <a href="http://www.h-poincare.fr/intendance/tarifs/">Tarifs</a>
+                    <a href="http://www.h-poincare.fr/c-p-g-e/hebergement/">Internat</a>
+                    <a
+                        href="http://www.h-poincare.fr/intendance/crediter-son-badge-etou-payer-sa-demi-pension-ou-internat-en-ligne/">Paiement
+                        sécurisé en ligne</a>
+                </div>
+            </div>
+            <div id="header__menu__eighth-package" onclick="toggleList(this.children[1]);">
+                <span id="header__menu__eighth-child" href="#">Espace Professeurs</span>
+                <div id="header__menu__eighth-child__list" class="MobileHidden">
+                    <a
+                        href="https://id.ac-nancy-metz.fr/login/ct_logon.jsp?CT_ORIG_URL=http%3A%2F%2Fwebmel.ac-nancy-metz.fr%3A80%2Fiwc%2F&ct_orig_uri=http%3A%2F%2Fwebmel.ac-nancy-metz.fr%3A80%2Fiwc%2F">Mail
+                        académique</a>
+                    <a href="https://portail.ac-nancy-metz.fr/">I prof</a>
+                    <a href="https://gestion.parcoursup.fr/Gestion/authentification">Parcoursup</a>
+                    <a href="http://www.h-poincare.fr/espaceprofesseurs/publications/">Publications</a>
+                </div>
+            </div>
+        </section>
+        <section id="header__image"></section>
+    </header>
+    <main>
+        <section id="main__easy-access">
+            <a href="https://lyc-poincare-nancy.monbureaunumerique.fr/">
+                <img src="img/icon/mbn.png">
+            </a>
+            <a href="http://www.h-poincare.fr/#gmw-dialog-googlemapswidget-2">
+                <img src="img/icon/googlemap.png">
+            </a>
+            <a href="http://195.83.121.153:8088/Pronote/?login=true&fd=&%20">
+                <img src="img/icon/pronote.png">
+            </a>
+            <a href="https://twitter.com/Lycee_Poincare">
+                <img src="img/icon/twitter.png">
+            </a>
+            <a href="http://www.h-poincare.fr/wp-content/uploads/Organigramme_2021-2022.jpg">
+                <img src="img/icon/formations.png">
+            </a>
+        </section>
+        <section id="main__slide">
+            <div id="main__slide__first" class="ActiveSlide">
+                <span>"Poinca", Un grand lycée</span>
+            </div>
+            <div id="main__slide__second" class="HiddenSlide">
+            </div>
+            <div id="main__slide__third" class="HiddenSlide">
+            </div>
+            <div id="main__slide__fourth" class="HiddenSlide">
+            </div>
+            <div id="main__slide__fifth" class="HiddenSlide">
+            </div>
+            <div id="main__slide__sixth" class="HiddenSlide">
+            </div>
+            <div id="main__slide__seventh" class="HiddenSlide">
+            </div>
+            <div id="main__slide__eighth" class="HiddenSlide">
+            </div>
+            <div id="main__slide__ninth" class="HiddenSlide">
+            </div>
+        </section>
+
+        <section id="main__news">
+            <a href="http://www.h-poincare.fr/les-eleves-de-2l-et-2m-ont-fait-leur-cinema" id="main__news__first">
+                <div id="main__news__first__title">Les élèves de 2L et 2M ont fait leur cinéma!</div>
+                <span>En exclusivité, les élèves de Seconde option Cinéma-audiovisuel vous présentent leur court métrage
+                    de fin d’année, intitulé AH OUAIS!… Même au Festival de Cannes, nous ne le verrez pas! Ils l’ont
+                    écrit, interprété, tourné entièrement au lycée et réalisé avec l’aide de Jean-Luc Nicolle,
+                    intervenant en cinéma. Nous espérons qu’il vous fera sourire. Nous tenons…</span>
+                <span id="date">Posté le Mai 16, 2022</span>
+            </a>
+
+            <a href="http://www.h-poincare.fr/poinca-brille-aux-eoes-internationales-en-republique-tcheque"
+                id="main__news__second">
+                <div id="main__news__second__title">Poinca brille aux EOES Internationales en République Tchèque</div>
+                <span>Nous tenons à mettre en lumière la très belle prestation de notre élève Antoine HOLLARD lors des
+                    EOES Internationales en République Tchèque . Il s’agit d’une manifestation européenne de grande
+                    ampleur faisant intervenir trois disciplines scientifiques : chimie, physique et biologie à égale
+                    proportion, avec près de 25 pays inscrits, cette compétition attire environ 150…</span>
+                <span id="date">Posté le Mai 16, 2022</span>
+            </a>
+
+            <a href="http://www.h-poincare.fr/triple-historique-pour-poinca" id="main__news__third">
+                <div id="main__news__third__title">Triplé historique pour Poinca !</div>
+                <span>La cérémonie des Olympiades Internationales de Chimie (OIC) s’est tenue samedi 14 mai 2021 au
+                    Lycée Louis-le-Grand. Après une semaine d’entraînement intensif et deux nouvelles épreuves, Marion,
+                    Hector et Eliott ont été classés respectivement 7ème, 6ème et 5ème sur les 337 participants inscrits
+                    initialement ! Le lycée et leurs professeurs sont particulièrement fiers du…</span>
+                <span id="date">Posté le Mai 16, 2022</span>
+            </a>
+
+            <a href="http://www.h-poincare.fr/5-avril-rencontre-des-eleves-avec-valerie-masson-delmotte-co-presidente-du-groupe-n1-du-giec"
+                id="main__news__fourth">
+                <div id="main__news__fourth__title">5 avril : rencontre des élèves avec Valérie Masson Delmotte,
+                    co-présidente du groupe n°1 du GIEC</div>
+                <span>Le 05 avril 2022, une éminente ancienne élève de notre lycée est venue rencontrer les éco-délégués
+                    et élèves intéressés par le sujet du changement climatique. Ce riche et dense moment d’échanges
+                    autour des solutions de limitation d’émissions des gaz à effet de serre est survenu le lendemain de
+                    la publication du 6ème rapport du GIEC…</span>
+                <span id="date">Posté le Avr 29, 2022</span>
+            </a>
+
+            <a href="http://www.h-poincare.fr/olympiades-internationales-de-chimie-poinca-en-place"
+                id="main__news__fifth">
+                <div id="main__news__fifth__title">Olympiades Internationales de Chimie: Poinca en place</div>
+                <span>Les Olympiades Internationales de Chimie ont encore attiré de nombreux élèves du lycée Poincaré
+                    avec 32 participants pour l’épreuve de pré-sélection qui s’est déroulée le 30 mars dernier. Créées
+                    en 1968, les Olympiades internationales de Chimie sont une compétition internationale de haut
+                    niveau, qui réunit chaque année près de 300 étudiants non spécialisés en chimie…</span>
+                <span id="date">Posté le Avr 24, 2022</span>
+            </a>
+
+            <a href="http://www.h-poincare.fr/voyage-en-republique-tcheque" id="main__news__sixth">
+                <div id="main__news__sixth__title">Voyage en République Tchèque</div>
+                <span>Après avoir accueilli leurs correspondants de la section française du Lycée Pierre de Coubertin de
+                    Tabor en décembre dernier, les élèves d’Histoire des Arts se sont rendus du 1er au 9 avril en
+                    République Tchèque. Ce voyage était l’occasion de se retrouver pour prolonger les amitiés tissées au
+                    moment des festivités de la Saint-Nicolas à…</span>
+                <span id="date">Posté le Avr 24, 2022</span>
+            </a>
+
+            <!-- <a href="http://www.h-poincare.fr/cine-club-du-lhp-mercredi-06-avril-13h30-au-cameo-commanderie" id="main__news__seventh">
+                <div id="main__news__seventh__title">Ciné-Club du LHP-Mercredi 06 avril 13h30 au Caméo Commanderie</div>
+                <span>“La Règle du jeu” de Jean Renoir, film de 1939 Synopsis: Le marquis de la Chesnaye organise une partie de chasse sur son domaine de Sologne. Un pléiade d’invités arrive au château dont André Jurieu, héros national depuis sa traversée de l’Atlantique en vingt-trois heures. Un exploit réalisé pour les beaux yeux de la marquise…</span>
+                <span id = "date">Posté le Avr 5, 2022</span>
+            </a>
+            
+            <a href="http://www.h-poincare.fr/12529-2" id="main__news__eighth">
+                <div id="main__news__eighth__title">Circuit training UNSS 2022: une belle bataille</div>
+                <span>Mercredi 23 mars notre courageuse équipe de circuit training a décroché la 5ème place sur 8 au championnat d académie à Lunéville. Bravo félicitations pour leur engagement leur esprit d équipe. Ils se sont dépassés… surpassés dans toutes les épreuves. Bravo à Arnaud pour son coaching, son extraordinaire investissement. Il a validé son titre de…</span>
+                <span id = "date">Posté le Mar 24, 2022</span>
+            </a> -->
+        </section>
+    </main>
+    <footer>
+        <a href="http://www.ac-nancy-metz.fr/">
+            <img src="img/footer/LogoNancyMetz.jpg">
+        </a>
+        <a href="https://www.grandest.fr/">
+            <img src="img/footer/log_grand_est.jpg">
+        </a>
+        <a href="Logo_Ministere_educ_Nat.jpg">
+            <img src="img/footer/Logo_Ministere_educ_Nat.jpg">
+        </a>
+        <a href="http://www.nancy.fr/">
+            <img src="img/footer/ville-de-nancy.jpg">
+        </a>
+        <a href="http://www.grand-nancy.org/">
+            <img src="img/footer/Ville_Grand_Nancy-logo.jpg">
+        </a>
+        <a href="http://www.enseignementsup-recherche.gouv.fr/">
+            <img src="img/footer/recherche.png">
+        </a>
+    </footer>
+</body>
+
+</html>

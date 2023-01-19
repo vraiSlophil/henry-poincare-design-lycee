@@ -1,0 +1,123 @@
+@media only screen and (max-width: 1000px) {
+    .ActiveSlide {
+        height: 12em;
+    }
+
+    header {
+        height: 14em;
+    }
+
+}
+
+@media only screen and (max-width: 680px) {
+    .ActiveSlide {
+        height: 8em;
+    }
+    
+    #main__slide > div > span {
+        font-size: 1.5em;
+    }
+
+    header {
+        height: 12em;
+    }
+    
+    #header__buttons {
+        padding: 0 0 0 2em;
+    }
+}
+
+/* @media only screen and (max-width: 450px) {
+}
+*/
+
+@media only screen and (max-width: 870px) {
+    .MenuShow {
+        flex-direction: column;
+        right: 0;
+        
+        width: max-content;
+        height: max-content;
+        border-radius: 0 0 0.2em 0.2em;
+        /* padding-bottom: 2em; */
+    }
+
+    #header__menu__first-package,
+    #header__menu__second-package,
+    #header__menu__third-package,
+    #header__menu__fourth-package,
+    #header__menu__fifth-package,
+    #header__menu__sixth-package,
+    #header__menu__seventh-package,
+    #header__menu__eighth-package {
+        min-height: 3em;
+    }
+
+    #header__menu__second-child__list,
+    #header__menu__third-child__list,
+    #header__menu__fourth-child__list,
+    #header__menu__fifth-child__list,
+    #header__menu__sixth-child__list,
+    #header__menu__seventh-child__list,
+    #header__menu__eighth-child__list {
+        overflow: hidden;
+        top: unset;
+        background-color: unset;
+        padding: 1em;
+        border-radius: unset;
+        position: static;
+        list-style: none;
+        flex-direction: column;
+        transform: unset;
+    }
+}
+
+
+@media only screen and (max-width: 450px) {
+
+    #main__easy-access {
+        width: 100%;
+        margin: 0 auto;
+        padding: 0.2em 0 0.5em 0;
+        border-radius: 0.5em 0.5em 0 0;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        position: fixed;
+        bottom: 0;
+        z-index: 9;
+    }
+
+    .ActiveSlide {
+        margin: 1em;
+        height: 4em;
+        width: 80%;
+    }
+    
+    #main__slide > div > span {
+        font-size: 1em;
+    }
+
+    #header__buttons {
+        padding: 0 0 0 1em;
+    }
+
+    #header__buttons__title {
+        font-size: 0.8em;
+    }
+
+    #header__buttons__contact {
+        font-size: 0.8em;
+        text-align: center;
+    }
+
+    #header__menu-button {
+        font-size: em;
+        margin: 0 0.5em;
+        cursor: pointer;
+    }
+
+    header {
+        height: 8em;
+    }
+}
